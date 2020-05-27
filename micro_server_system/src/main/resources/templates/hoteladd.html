@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店添加</title>
+</head>
+<body>
+<h1>
+    <span>酒店添加</span>
+</h1>
+<div>
+    <form action="/back/addCity">
+        酒店名称:<input name="hotalName" /><br/>
+        城市图片:<input type="file" name="hotalImage"/><br/>
+        酒店类型:<select name="type">
+                    <option value="1">星级酒店</option>
+                    <option value="2">民宿</option>
+                    <option value="3">快捷酒店</option>
+                    <option value="4">大通铺</option>
+    </select><br/>
+        关键字:<input type="text" name="keyword"/><br/>
+        位置信息:<br/>
+        &nbsp;经度:<input name="lon"><br/>
+        &nbsp;纬度:<input name="lat"><br/>
+        酒店地址:<input name="address"/><br/>
+        星级:<input name="star"/><br/>
+        营业时间:<input type="data" name="openTime"/><br/>
+        价格:<input name="price"/><br/>
+        行政区域:<input type="text" name="regid">
+        房间数量:<input name="roomNumber"/><br/>
+        酒店信息:<textarea rows="15" cols="30" name="hotelInfo" disabled/><br/>
+
+
+    <input type="submit" />
+    </form>
+
+</div>
+</body>
+</html>

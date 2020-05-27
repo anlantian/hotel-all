@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: micro-back
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:20000/eureka
+    fetch-registry: true
+    register-with-eureka: false
+ribbon:
+  MaxAutoRetries: 0
+  #配置ribbon的下个服务的重试次数，默认是1
+  MaxAutoRetriesNextServer: 0
